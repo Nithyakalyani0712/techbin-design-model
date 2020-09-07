@@ -31,7 +31,7 @@
  * If the user have account already the amount of weight of will added up.
  * Based on the amount of weight the user will be rewarded.
  
- ## PitfallsL:
+ ## Pitfalls:
  * People will through stone,sand,iron rod,etc which have high weight to get reward.
  
  ## Our solution:
