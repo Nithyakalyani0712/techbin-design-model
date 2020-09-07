@@ -21,7 +21,7 @@
      
  ### Powersource:
      * we used mobile charger (5.5v) adapter to power arduino and raspberry pi.
-     ( use can use 9v battery to power arduino but raspiberry pi need high current to operate all connected
+     ( we can use 9v battery to power arduino but raspiberry pi need high current to operate all connected
       sensors)
  
 ## Method of operation:
