@@ -10,12 +10,12 @@ comPort="/dev/ttyUSB0"
 baurdRate=9600
 old_weight=0
 ###########################################
-user="192.168.43.138"
-password="Padhu@1999"
-host="192.168.43.185"
-database="fingerprintdb5"
-port=3306
-
+user="Your User name"
+password="Your password"
+host="Your host ip"
+database="Your database name"
+port=3306   # your port number
+#Replace user,password,host,database,port with your user name,password,host ip,database and port number
 
 ############################################
 comport=str(comPort)
@@ -103,7 +103,10 @@ def getFrequencyDetail(id):
 #########################################
 def updateDetail(id, weight):
     try:
-        mySQLConnection = mysql.connector.connect(user="192.168.43.138",password="Padhu@1999",host="192.168.43.185",database="fingerprintdb5",port=3306)
+        mySQLConnection = mysql.connector.connect(user=" your User name",password="your password",host="your host ip",database="Your Database name",port="Your port number")
+        '''replace Your user name ,Your password,Your host ip ,Your database name,Your port number with your user name,password,host,database name from mysql and ur port numuber
+        usually 3306'''
+        #Eg: mySQLConnection = mysql.connector.connect(user="192.168.43.138",password="Padhu@1999",host="192.168.43.185",database="fingerprintdb5",port=3306)
         cursor = mySQLConnection.cursor()
         sql_update_query = """Update UserDetails set Weight = %s where UserId = %s"""
         inputData = (weight, id)
